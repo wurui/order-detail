@@ -27,7 +27,7 @@
             <totalcount>1</totalcount>
             <seller>git/wurui</seller>
             <buyer>git/wurui</buyer>
-            <delivery>王老二(18199992222)北京市东城区西大望月路456号</delivery>
+            <delivery>kwu(18199992222)北京市东城区456</delivery>
             <bill>
                 <i>
                     <item>邮费</item>
@@ -74,6 +74,15 @@
                     <type>weixin</type>
                     <time><fmt_cn>2017年2月3日 14:12</fmt_cn></time>
                 </pay>
+                <refund>
+                    <apply><fmt_cn>2017年2月3日 14:12</fmt_cn></apply>
+                    <complete><fmt_cn>2017年2月3日 15:12</fmt_cn></complete>
+                    <success>1</success>
+                </refund>
+                <deliver>
+                    <time><fmt_cn>2017年2月3日 12:12</fmt_cn></time>
+                    <no>299888321</no>
+                </deliver>
             </actions>
         </i>
     </orders>

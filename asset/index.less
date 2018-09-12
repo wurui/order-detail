@@ -1,3 +1,85 @@
 .oxmod-order-detail{
 /* CSS */
+	color:#333;
+	font-weight: 300;
+	h2,h3{
+		font-weight: 300;
+		color:#555;
+	}
+	table{
+		width:100%;
+		margin:5px 0 20px;
+		border-collapse :   collapse ;
+		border-spacing:0;
+
+		th{
+			font-weight: 400;
+			text-align: left;
+			color:#666;
+			white-space: nowrap;
+		}
+		th,td{
+			//border-width:  .5px;
+			//border-color: #f8f8f8;
+			//border-style:none none solid;
+			padding: 5px;
+			vertical-align: top;
+
+		}
+		td{
+			text-align: right;
+		}
+	}
+	.order-id{
+		text-transform: uppercase;
+	}
+	.price{
+		//color:#f60;
+		//font-size: 1.2em;
+		&:before{
+			content:'\a5';
+			font-size: .8em;
+		}
+	}
+	.paychannel-{
+		&:before{
+			font-size: 14px;
+			content: '其它';
+		}
+	}
+	.paychannel-alipay{
+		font-size: 0;
+		&:before{
+			font-size: 14px;
+			content: '支付宝';
+		}
+	}
+	.paychannel-weixin{
+		font-size: 0;
+		&:before{
+			font-size: 14px;
+			content: '微信支付';
+		}
+	}
+	.status-desc{
+		font-weight: 400;
+		font-size:1.2em;
+	}
+	.operation{
+		text-align: center;
+		button{
+			color:#333;
+			width:120px;
+			height: 32px;
+			line-height: 32px;
+			background-color: #f8f8f8;
+			text-align: center;
+			
+			font-size: 15px;
+			border:none;
+			box-shadow: 0 0 1px #999;
+
+			margin:5px;
+		}
+	}
  }
