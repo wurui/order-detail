@@ -3,7 +3,8 @@
   "name": "order-detail",
   "apiDependencies": [
   {
-    "name": "orders"
+    "name": "orders",
+    "selector":"detail_seller"
   }
 ]
 }

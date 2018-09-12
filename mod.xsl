@@ -2,7 +2,9 @@
     <xsl:template match="/root" name="wurui.order-detail">
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-order-detail" ox-mod="order-detail">
+        	<xsl:variable name="dsid" select="substring(data/orders/attribute::ADAPTERID,2)"/>
         	<xsl:variable name="order" select="data/orders/i[1]"/>
+
         	<xsl:variable name="status-desc">
 				<xsl:choose>
 					<xsl:when test="$order/actions/refund/success">退款成功</xsl:when>
@@ -14,6 +16,7 @@
 					<xsl:when test="$order/actions/deliver">已发货</xsl:when>
 					<xsl:when test="$order/actions/pay">已付款</xsl:when>
 					<xsl:when test="$order/actions/accept">商家已接单</xsl:when>
+					<xsl:otherwise>待支付</xsl:otherwise>
 				</xsl:choose>
 			</xsl:variable>
         	<h2>订单信息</h2>
@@ -181,6 +184,9 @@
 					</xsl:when>
 					<xsl:when test="$status-desc = '已付款'">
 						<button data-action="refund-apply">申请退款</button>
+					</xsl:when>
+					<xsl:when test="$status-desc = '待支付'">
+						<a class="buttonlike" href="http://pay.openxsl.com/p/pay/custom?dsname=orders&amp;dsid={$dsid}&amp;oid={$order/_id}">付款</a>
 					</xsl:when>
 					
 				</xsl:choose>
