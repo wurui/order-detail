@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../demo.xsl"?>
+<root>
+    <env>
+        <domain>local</domain>
+    </env>
+    <p>
+        <title>order-detail nodata demo</title>
+        <desc>this is deme page</desc>
+        <owner>openxsl</owner>
+        <icon>//oxm1.cc/img/app_default.png</icon>
+    </p>
+    <data>
+    	<orders ADAPTERID="25b544ecb6d15f1185ab47f35" SELECTOR="buyer_detail">
+    		<i>
+    			<_id>5b964fdc49c51b598ddf86c6</_id>
+    			<title>厚切三文鱼片X1</title>
+    			<totalfee>89</totalfee>
+    			<time><fmt_cn>2018年9月10日 19:05:00</fmt_cn></time>
+    			<seller></seller>
+    			<delivery>吴小帅 13211123333 湖北 武汉 东西湖 金银湖 16022</delivery>
+    			<bill><i><item>厚切三文鱼片X1</item><value>89</value></i></bill>
+    			<content><i><name>厚切三文鱼片</name><amount>1</amount><price>89</price></i></content>
+    			<actions>
+    				<pay>
+    					<trade_no>123</trade_no>
+    					<type>alipay</type>
+    					<time><fmt_cn>2018年9月12日 12:12:00</fmt_cn></time>
+    				</pay>
+    				<refund>
+    					<accept></accept>
+    					<trade_no></trade_no>
+    				</refund>
+    				<accept></accept>
+    				<deliver><time></time><no></no></deliver>
+    				<complete></complete>
+    				<close></close>
+    			</actions>
+    		</i>
+    	</orders>
+    </data>
+</root>
+

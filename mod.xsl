@@ -1,22 +1,24 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:oxm="https://www.openxsl.com">
     <xsl:template match="/root" name="wurui.order-detail">
         <!-- className 'J_OXMod' required  -->
-        <div class="J_OXMod oxmod-order-detail" ox-mod="order-detail">
+        <div class="J_OXMod oxmod-order-detail" ox-mod="order-detail" >
         	<xsl:variable name="dsid" select="substring(data/orders/attribute::ADAPTERID,2)"/>
         	<xsl:variable name="order" select="data/orders/i[1]"/>
+        	<input type="hidden" value="{$order/_id}" class="J_order_id"/>
 
         	<xsl:variable name="status-desc">
 				<xsl:choose>
 					<xsl:when test="$order/actions/refund/success">退款成功</xsl:when>
-					<xsl:when test="$order/actions/refund/complete">退款完成</xsl:when>
-					<xsl:when test="$order/actions/refund/accept">退款处理中</xsl:when>
-					<xsl:when test="$order/actions/refund/apply">退款中</xsl:when>
-					<xsl:when test="$order/actions/close">订单已关闭</xsl:when>
-					<xsl:when test="$order/actions/complete">订单已完成</xsl:when>
-					<xsl:when test="$order/actions/deliver">已发货</xsl:when>
-					<xsl:when test="$order/actions/pay">已付款</xsl:when>
-					<xsl:when test="$order/actions/accept">商家已接单</xsl:when>
-					<xsl:otherwise>待支付</xsl:otherwise>
+					<xsl:when test="$order/actions/refund/complete/fmt_cn">退款完成</xsl:when>
+					<xsl:when test="$order/actions/refund/accept/fmt_cn">退款处理中</xsl:when>
+					<xsl:when test="$order/actions/refund/apply/fmt_cn">退款中</xsl:when>
+					<xsl:when test="$order/actions/close/fmt_cn">订单已关闭</xsl:when>
+					<xsl:when test="$order/actions/complete/fmt_cn">订单已完成</xsl:when>
+					<xsl:when test="$order/actions/deliver/time/fmt_cn">已发货</xsl:when>
+					<xsl:when test="$order/actions/pay/time/fmt_cn">已付款</xsl:when>
+					<xsl:when test="$order/actions/accept/fmt_cn">商家已接单</xsl:when>
+					<xsl:when test="$order/time/fmt_cn">待支付</xsl:when>
+					<xsl:otherwise></xsl:otherwise>
 				</xsl:choose>
 			</xsl:variable>
         	<h2>订单信息</h2>
