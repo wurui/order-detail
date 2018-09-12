@@ -1,4 +1,4 @@
-define([],function(){
+define(['oxjs'],function(OXJS){
   return {
     init:function($mod){
     	var order_id=$('.J_order_id',$mod).val();

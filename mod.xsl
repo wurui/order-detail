@@ -64,7 +64,7 @@
             		
             	</tbody>
             </table>
-            <xsl:if test="$order/actions/refund">
+            <xsl:if test="$order/actions/refund/apply/fmt_cn">
 	        	<h3>退款信息</h3>
 	            <table>
 	            	<tbody>
@@ -102,7 +102,7 @@
 	            				<xsl:value-of select="$order/delivery" />
 	            			</td>
 	            		</tr>
-	            		<xsl:if test="$order/actions/deliver">
+	            		<xsl:if test="$order/actions/deliver/time/fmt_cn">
 	            		<tr>
 	            			<th>物流单号</th>
 	            			<td>
