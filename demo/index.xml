@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../demo.xsl"?>
+<root>
+    <env>
+        <domain>local</domain>
+    </env>
+    <login>
+        <uid>git/wurui</uid>
+        <nick>wurui</nick>
+    </login>
+    <p>
+        <title>order-detail demo page</title>
+        <desc>this is deme page</desc>
+        <owner>openxsl</owner>
+        <icon>//oxm1.cc/img/app_default.png</icon>
+    </p>
+    <data>
+    <orders ADAPTERID="25a7139af1f0c0544b9914139">
+        <i>
+            <_id>5a713ac91f0c0544b9914150</_id>
+            <_uid>git/wurui</_uid>
+            <title>扫码车贴1张</title>
+            <totalfee>1.23</totalfee>
+            <time>1517370057143</time>
+            <totalcount>1</totalcount>
+            <seller>git/wurui</seller>
+            <buyer>git/wurui</buyer>
+            <delivery>kwu(18199992222)北京市东城区456</delivery>
+            <bill>
+                <i>
+                    <item>deliveryfee</item>
+                    <value>0</value>
+                </i>
+                <i>
+                    <item>product</item>
+                    <value>1.23</value>
+                </i>
+            </bill>
+            <content>
+                <i>
+                    <name>扫码车贴-定制版</name>
+                    <amount>1</amount>
+                    <price>1.23</price>
+                    <id>28288282</id>
+                    <customize>
+                        <i>
+                            <name>tpl</name>
+                            <value>1</value>
+                        </i>
+                        <i>
+                            <name>bgcolor</name>
+                            <value>1</value>
+                        </i>
+                        <i>
+                            <name>text1</name>
+                            <value>扫码移车</value>
+                        </i>
+                        <i>
+                            <name>text2</name>
+                            <value>www.shaomachetie.com</value>
+                        </i>
+                        <i>
+                            <name>carlogo</name>
+                            <value>20138</value>
+                        </i>
+                    </customize>
+                </i>
+            </content>
+        </i>
+    </orders>
+    </data>
+</root>

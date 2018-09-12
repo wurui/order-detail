@@ -1,0 +1,10 @@
+{
+  "RULE_VERSION":"20180724",
+  "name": "order-detail",
+  "apiDependencies": [
+  {
+    "name": "orders"
+  }
+]
+}
+
