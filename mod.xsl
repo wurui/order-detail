@@ -15,8 +15,8 @@
 					<xsl:when test="$order/actions/close/fmt_cn">订单已关闭</xsl:when>
 					<xsl:when test="$order/actions/complete/fmt_cn">订单已完成</xsl:when>
 					<xsl:when test="$order/actions/deliver/time/fmt_cn">已发货</xsl:when>
-					<xsl:when test="$order/actions/pay/time/fmt_cn">已付款</xsl:when>
 					<xsl:when test="$order/actions/accept/fmt_cn">商家已接单</xsl:when>
+					<xsl:when test="$order/actions/pay/time/fmt_cn">已付款</xsl:when>
 					<xsl:when test="$order/time/fmt_cn">待支付</xsl:when>
 					<xsl:otherwise></xsl:otherwise>
 				</xsl:choose>
