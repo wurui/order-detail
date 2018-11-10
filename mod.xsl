@@ -3,7 +3,7 @@
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-order-detail" ox-mod="order-detail" >
         	<xsl:variable name="dsid" select="substring(data/orders/attribute::ADAPTERID,2)"/>
-        	<xsl:variable name="order" select="data/orders/i[1]"/>
+        	<xsl:variable name="order" select="data/ecom-orders/i[1]"/>
         	<input type="hidden" value="{$order/_id}" class="J_order_id"/>
 
         	<xsl:variable name="status-desc">

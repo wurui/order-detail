@@ -11,7 +11,7 @@ define(['oxjs'],function(OXJS){
     			//console.log('申请退款')
     			tar.setAttribute('disabled','disabled');
     			$mod.OXPut({
-    				orders:{
+    				'ecom-orders':{
     					_id:order_id,
     					//'actions.refund.apply':Date.now()
     					$updater:'refundapply'
@@ -30,7 +30,7 @@ define(['oxjs'],function(OXJS){
     			case 'refund-cancel':
     			tar.setAttribute('disabled','disabled');
     			$mod.OXPut({
-    				orders:{
+    				'ecom-orders':{
     					_id:order_id,
     					$updater:'refundcancel'
     				}

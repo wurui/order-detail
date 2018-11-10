@@ -15,7 +15,7 @@
         <icon>//oxm1.cc/img/app_default.png</icon>
     </p>
     <data>
-    <orders ADAPTERID="25a7139af1f0c0544b9914139">
+    <ecom-orders ADAPTERID="25a7139af1f0c0544b9914139">
         <i>
             <_id>5a713ac91f0c0544b9914150</_id>
             <_uid>git/wurui</_uid>
@@ -72,6 +72,6 @@
                 
             </actions>
         </i>
-    </orders>
+    </ecom-orders>
     </data>
 </root>

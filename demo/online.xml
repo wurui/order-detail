@@ -11,7 +11,7 @@
         <icon>//oxm1.cc/img/app_default.png</icon>
     </p>
     <data>
-    	<orders ADAPTERID="25b544ecb6d15f1185ab47f35" SELECTOR="buyer_detail">
+    	<ecom-orders ADAPTERID="25b544ecb6d15f1185ab47f35" SELECTOR="buyer_detail">
     		<i>
     			<_id>5b964fdc49c51b598ddf86c6</_id>
     			<title>厚切三文鱼片X1</title>
@@ -37,7 +37,7 @@
     				<close></close>
     			</actions>
     		</i>
-    	</orders>
+    	</ecom-orders>
     </data>
 </root>
 
